@@ -16,17 +16,75 @@
 \usepackage{glossaries}
 \usepackage{xcolor}
 
-\begin{document}
+\include{chapterStyle}
+
+% Redéfinition de commandes
+\renewcommand\thesection{\arabic{section}}
+% \renewcommand\thechapter{\Roman{chapter}}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\makeglossaries
+\newglossaryentry{ASP}{
+	name={ASP}, % apparait dans le glossaire
+	text={ASP*}, % apparait dans le texte
+	description={Application Service Provider,  Fournisseur d'Aplications de Service}
+}
 
 \title{Le cloud et la virtualisation}
 \author{Sébastien Corbin et Gaëlle Avrillon}
 \date{\today}
-\maketitle
 
-\chapter{Introduction}
 
-\chapter{Cas d'entreprise}
+\begin{document}
+% Interlignage 1,5
+\begin{onehalfspace}
 
-\chapter{Conclusion}
+		\begin{titlepage}
+			\begin{center}
+				Sébastien CORBIN et Gaëlle AVRILLON\\
+				CSII 3\ieme année\\
+			\end{center}
+			\hrulefill
+			\vspace{7cm}
+			\begin{center} 
+				\LARGE \textbf{La virtualisation et le cloud}\\
+			\end{center}
+		\end{titlepage}
+		\newpage
 
+		\shorttableofcontents{Sommaire}{0}
+		\setcounter{page}{1}
+		\thispagestyle{empty}
+		\newpage
+
+		%%%%%%%%%%%%%%%%%%
+		% Introduction 
+		%%%%%%%%%%%%%%%%%%
+	\chapter*{Introduction}
+	
+	\paragraph*{}
+	Les Bureaux de Services (\emph{Service bureaus}) sont l’ancêtre du Software as a Service. Datant des années 60-70, leur point commun est qu’ils offrent un service en échange d’honoraires. Leur application dans les domaines est vaste : banques, assurances, etc. Une entreprise de ce type offre à ses clients son expertise dans un domaine : cela correspond tout à fait avec la notion actuelle de SaaS et c’est par l’avancée technologique des réseaux de communications que cette notion de “bureaux de service”  s’est énormément développée dans l’informatique.
+	
+	\paragraph*{}
+	Les débuts du cloud computing se situent dans la notion de Fournisseur de Service d’Application (ASP*), présente au début des années 2000. Les premières applications à avoir migré dans les nuages sont les messageries, les outils collaboratifs, le CRM, les environnements de développement. Amazon, Yahoo et Google sont les premiers à se lancer dans ce concept. Ces deux derniers offrent au grand public des applications simples et gratuites telles que la messagerie ou la gestion de calendriers en ligne.
+	
+	\paragraph*{}
+	La notion de Software as a Service (SaaS) est apparue en 2007 et remplace les précédents termes tels que ASP (Application Service Provider) ou encore “On Demand”.
+	SaaS est un concept consistant à proposer un abonnement au logiciel plutôt que l’achat d’une licence. Avec le développement des technologies de l’information, de nombreuses offres SaaS se font à travers le web. Il n’y a alors plus besoin d’installer d’application de bureau, mais d’utiliser un programme client-serveur.
+	Les applications s’appuyant sur ce modèle ont été nativement conçues pour le web contrairement aux modèles précédents.
+	
+	\paragraph*{}
+	Le Grid Computing est une infrastructure virtuelle constituée d’un ensemble de ressources informatiques. Ces ressources sont partagées (elles sont mises à disposition des consommateurs), distribuées (elles sont situées dans des lieux géographiques différents), hétérogènes, coordonnées, autonomes et délocalisées (les ressources peuvent appartenir à plusieurs sites).
+	
+	\chapter{Cas d'entreprise}
+	
+	\chapter{Conclusion}
+	
+	% Table des matières
+	\addcontentsline{toc}{chapter}{Tables des matières}
+	\tableofcontents
+	\newpage
+
+ 	% Interlignage 1,5
+	\end{onehalfspace}
 \end{document}
