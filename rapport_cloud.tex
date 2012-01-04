@@ -27,7 +27,7 @@
 \newglossaryentry{ASP}{
 	name={ASP}, % apparait dans le glossaire
 	text={ASP*}, % apparait dans le texte
-	description={Application Service Provider,  Fournisseur d'Aplications de Service}
+	description={Application Service Provider,  Fournisseur d'Applications de Service}
 }
 
 \title{Le cloud et la virtualisation}
@@ -311,29 +311,56 @@ Cette deuxième solution repose sur la confiance dans l’employé et dans un pa
 	%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{La virtualisation}
 	
-	\paragraph*{}
+	\subsection{Définition de la virtualisation}
 	La virtualisation est une technique consistant à faire fonctionner en même temps, sur un seul serveur, plusieurs systèmes d'exploitation comme s'ils fonctionnaient sur des ordinateurs distincts.
 	
-	\subsection{Historique de la virtualisation}
+	 Il s’agit donc d’utiliser une seule machine physique en remplacement de plusieurs et d’utiliser les possibilités offertes par la virtualisation pour démultiplier le nombre de machines virtuelles. Les intérêts sont divers et variés allant d’une administration simplifiée à une consommation électrique amoindrie.
+	 
+	Pour une entreprise, les technologies de virtualisation permettent de séparer des applications et des systèmes de manière logique. Aujourd'hui, la tendance est plutôt au rassemblement de plusieurs services, autrefois distincts, sur une seule machine, par le biais de l’utilisation de technologies de virtualisation pour maintenir une séparation entre les services. Nous parlons alors de consolidation de serveurs.
 	
-	\subsection{Les techniques de virtualisation}
+	De plus, avec la virtualisation, nous pouvons déployer très rapidement une nouvelle configuration logicielle (système d’exploitation, applications installées et configurées, environnement de développement, etc.) et l’installer aussitôt en production. Le gain de temps ainsi occasionné se mesure en heures dans une journée de travail. 
 	
+	Enfin, la multiplication de serveurs a un coût qui n’est pas nul pour l’entreprise, que ce soit en espace occupé, en énergie ou en maintenance. Tous ces facteurs font qu’il n’est plus pertinent aujourd’hui d’utiliser des machines séparées pour héberger des services ne nécessitant qu’une 
+fraction de la puissance d’une machine.
 	
+	\subsection{Les domaines de la virtualisation}
+	Il est important pour une entreprise de définir quelle technologie elle souhaite virtualiser. Il existe trois principaux domaines de virtualisation : on virtualise le système d'exploitation, le système de stockage ou encore les applications.
+	
+	\subsubsection{La virtualisation du système d'exploitation}
+	La virtualisation du système d'exploitation est la forme de virtualisation la plus répandue. Elle permet de faire fonctionner simultanément des systèmes standards sur la même plateforme matérielle. Les gestionnaires de machines virtuelles, s'installent soit comme une application d'un système d'exploitation hôte, soit comme une couche logicielle plus profonde que le système d'exploitation, et permettent d'administrer chaque machine virtuelle de façon individuelle, de telle sorte que chaque instance du système d'exploitation n'a pas conscience que la gestion se fait sur un mode virtuel et que d'autres machines virtuelles fonctionnent en même temps.
+	
+	\subsubsection{La virtualisation d'application}
+	La virtualisation d'application correspond à ce que l'on appelle « client léger ». La virtualisation d'application implique de pouvoir exécuter un logiciel sans toutefois l'installer physiquement sur le système auquel l'utilisateur est connecté, avec tout ce que cela implique en termes d'économies (de processus, de déploiement, d'altération, de mise à jour, de test, de compatibilité, etc.).  
+	
+	\subsubsection{La virtualisation du stockage}
+	La virtualisation du stockage se compose en deux catégories principales : la virtualisation de blocs, d'une part, et la virtualisation de fichiers, d'autre part. 
+	
+	La virtualisation de blocs correspond plus précisément aux technologies de réseau de stockage 
+(SAN) et de stockage en réseau (NAS). Au niveau du SAN, la virtualisation de l'espace de stockage se rencontre d'abord dans les unités de stockage, avec l'introduction il y a plusieurs années, de la première forme de virtualisation du stockage : le RAID.
+ 
+	La virtualisation de fichiers rend la couche virtuelle plus accessible à l'échelle de l'utilisateur. La plupart des technologies de virtualisation de fichiers sont associées à des réseaux de stockage et permettent de suivre la localisation et la répartition des fichiers et répertoires dans 
+le dispositif de stockage. Par exemple, un utilisateur qui pense accéder à un fichier localisé sur 
+son unité distante de stockage, y accède en fait via un serveur de partage de ressources SMB hébergé dans un centre de données. Le réseau principal est ainsi libéré et dynamisé.  
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Les architectures Cloud}
 
 	\paragraph*{}
-	Le Cloud Computing repose sur des ressources physiques. Mais où sont ces ressources physiques (serveurs, routeurs …) ?\\
+	Le Cloud Computing repose sur des ressources physiques. Mais où sont ces ressources physiques (serveurs, routeurs …) ?
+	
 	La réponse “dans le nuage” n’est pas vraiment acceptable. Du côté du client, l’abstraction est telle qu’il ne peut pas déterminer sur quelles ressources physiques ses données, ses applications sont hébergées. Le Cloud Computing est dynamique, les ressources hébergeant une application, des données ne sont jamais fixes et évoluent dans le temps.
-En théorie, le Cloud Computing n’impose aucune dépense en immobilisation. On exploite généralement les ressources physiques des fournisseurs de Cloud.\\
+	
+En théorie, le Cloud Computing n’impose aucune dépense en immobilisation. On exploite généralement les ressources physiques des fournisseurs de Cloud.
+
 	Cependant cette technologie de Cloud peut se retrouver sur l’infrastructure physique d’une entreprise. Dans ce cas, le Cloud reste privé. On parlera alors de Cloud public, de Cloud privé et de Cloud hybride.
 	
 	\subsection{Le Cloud privé}
 	
 	\paragraph*{}
-	Ces ressources physiques peuvent être hébergées dans une infrastructure propre à l’entreprise. Elles sont sous son contrôle et l’entreprise doit contrôler le déploiement de ses applications.\\
-	On peut se demander si un Cloud privé est réellement un Cloud? En effet, théoriquement un Cloud ne doit pas imposer de dépenses en immobilisations. Or, l’infrastructure physique dans un Cloud privé est à la charge de l’entreprise.\\
+	Ces ressources physiques peuvent être hébergées dans une infrastructure propre à l’entreprise. Elles sont sous son contrôle et l’entreprise doit contrôler le déploiement de ses applications.
+	
+	On peut se demander si un Cloud privé est réellement un Cloud? En effet, théoriquement un Cloud ne doit pas imposer de dépenses en immobilisations. Or, l’infrastructure physique dans un Cloud privé est à la charge de l’entreprise.
+	
 	Le Cloud privé peut aussi désigner un Cloud déployé sur une infrastructure physique dédiée et géré par l’entreprise elle-même : il s’agit d’un Cloud privé interne. Ce Cloud peut également être mis à disposition d’un fournisseurs de services. Ainsi, une entreprise peut louer à un fournisseur de services, des serveurs qui lui sont entièrement dédiés et sur lesquels une solution de Cloud sera déployée. Il s’agit, dans ce cas, d’un Cloud privé externe. Ce Cloud est accessible via des réseaux sécurisées de type VPN.
 	
 	\subsection{Le Cloud public}
@@ -389,6 +416,7 @@ On peut héberger nos applications dans un Cloud public qui utilisera des donné
 	\chapter*{Conclusion}
 %%%%TODO%%%%%%%
 	
+
 	
 	% Table des matières
 	\addcontentsline{toc}{chapter}{Tables des matières}
