@@ -15,6 +15,7 @@
 \usepackage{shorttoc}
 \usepackage{glossaries}
 \usepackage{xcolor}
+\usepackage{eurosym}
 
 \include{chapterStyle}
 
@@ -288,28 +289,6 @@ Cet avantage en apporte un autre, celui de la mobilité. En effet, les machines 
 		\item Possibilité de défaillance
 		\item Pas d’accès hors-ligne
 	\end{itemize}
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\chapter{Contexte d’entreprise}
-	%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Analyse des besoins}
-	
-
-%%%%%TODO%%%%%%%%%%	
-	\paragraph*{}
-	\begin{itemize}
-		\item besoin de rentabilité (=compétitivité)
-		\item besoin de sécurité
-		\item besoin de flexibilité (en fonction des projets par ex.)
-	\end{itemize}
-
-	%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Cahier des charges type}
-	
-%%%%%%%TODO%%%%%%%
-
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\chapter{Solutions techniques}
@@ -400,24 +379,68 @@ On peut héberger nos applications dans un Cloud public qui utilisera des donné
 %%%%%%%%%%%%%TODO%%%%%%%%%%%
 
 	\subsection{Google}
-%%%%%%%%%%%%%TODO%%%%%%%%%%%
+	En 2008, Google a lancé son Cloud public orienté pour les services Web offrant une plate-forme (PaaS) nommée « Google App Engine » et permettant l'hébergement d'applications Python ou Java, ainsi que des applications SaaS regroupées dans la gamme « Google App ».
+
+	\subsubsection*{Google App Engine}
+	Google Apps Engine est une plateforme de conception et d’hébergement d’applications web basée sur les serveurs de Google. Cette plateforme est facile à construire et à maintenir, elle supporte facilement la montée en charge et les besoins croissants de stockage des données. Google App Engine supporte les applications écrites dans plusieurs langages de programmation. Avec l'environnement d'exécution JavaTM App Engine (JRE), vous pouvez construire votre application en utilisant les technologies standard Java, incluant la JVM, les servlets Java, et le langage de programmation Java, Javascript et Ruby. App Engine comprend également un environnement d'exécution Python dédié, qui inclut un interpréteur Python rapide et une librairie Python standard. Les environnements Java et Python sont construits de telle sorte que les application fonctionnent rapidement, dans un espace sécurisé, et sans interférences avec les autres applications du système. Il n’y a pas de coût de mise en services ni de commission, on paye ce qu’on utilise. Les ressources (stockage, bande passante) sont mesurées et facturées aux clients.
+% TODO (SOURCE GOOGLE APP ENGINE)
+
+	\subsubsection*{Google Apps}
+	Google Apps fournit une suite de Cloud Computing personnalisable comprenant une messagerie (Google Mail), un agenda (Google Calendar), des outils bureautiques (Google Docs) et un chat (Google Talk). Google propose également Google Site qui met à disposition un CMS* à la demande pouvant concevoir des sites Web sans aucun développement.\newline
+Le point fort de Google Apps est sa portabilité. Sur n’importe quel navigateur web ou encore à partir d’application mobile, on peut accéder à nos mails ou nos documents. Google Apps n’est pas destiné uniquement aux startups, de grandes entreprises ont choisis Google comme fournisseur de Cloud Computing. Ces entreprises peuvent ainsi travailler en réseau avec leurs clients.\newline
+Google Apps a également un atout financier. En effet, aucun équipement ou logiciel n’est nécessaire en s’abonnant à ces services. Le coût de cette solution est d’environ 40\euro{} par an et par utilisateur. Pour finir, on n’a pas besoin de mettre à jour les services, Google met à jour régulièrement ses applications en ligne pour corriger d'éventuels problèmes et ajouter de nouvelles fonctionnalités. %(SOURCE GOOGLE APPS)
+%TODO (SOURCE GOOGLE APP ENGINE) http://brocoli.developpez.com/articles/presentation/google- app-engine/ (SOURCE GOOGLE APPS) http://cloudcomputing.fr/google-apps.php
+%Glossaire: CMS (Content Management System ou système de gestion de contenu) : logiciel destiné à la conception et à la mise eà jour dynamique de site Web ou d’application multimédia.
 
 	\subsection{Salesforce.com}
 %%%%%%%%%TODO%%%%%%%%%
 
 	\paragraph*{}
-	Salesforce.com est une entreprise crée en 1999 aux Etats-Unis. Elle distribue des logiciels de gestion basés sur Internet et héberge des applications d'entreprises. Elle est surtout connue au niveau international pour ses solutions en gestion de la relation client.
+	Salesforce.com est une entreprise créée en 1999 aux Etats-Unis. Elle distribue des logiciels de gestion basés sur Internet et héberge des applications d'entreprises. Elle est surtout connue au niveau international pour ses solutions en gestion de la relation client.
 	
 	\subsection{VMware}
-%%%%%TODO%%%%%%%%%
+	VMware est une entreprise crée en 1998 à Palo Alto en Californie. Pendant plus de 10 ans, elle a conçu différents produits liés à la virtualisation. En 1999, la permière version de VMware Workstation apparaît. Ce logiciel permet la virtualisation de système d’exploitation. D’autres éditions comme la gamme ESX ou Server proposent des solutions de virtualisation pour les serveurs.
+
+	Depuis 2008, VMware n’a cessé d’investir dans le marché du Cloud Computing en rachetant différentes entreprises comme Zimbra (application SaaS de collaboration) ou SpringSource pour son offre PaaS avec vFabric. Aujourd’hui VMware propose une IaaS nommé vSphere et une PaaS nommé vFabric.
+	\subsubsection*{vSphere}
+	VSphere permet de créer des infrastructure de Cloud Computing et permet aux utilisateurs d'exécuter les applications critiques en toute sécurité et de répondre plus rapidement aux besoins de leur entreprise. Cette solution propose du calcul (vCompute), du stockage (vStorage) et du réseau (vNetwork). Elle permet de gagner en flexibilité. En effet, le client peut développer une infrastructure à la demande et facturée au gré de des besoins. Le client va également pouvoir gérer son espace de stockage et les performances de son infrastructure. Différentes éditions de vSphere sont proposées pour permettre de s’adapter aux petites ou aux moyennes et grandes entreprises. De plus, différents services sont proposés comme la migration de machines virtuelles à chaud d’un superviseur à un autre (VMotion), la migration à chaud de sources de stockages (Storage VMotion) ou encore le redémarrage d’une machine virtuelle sur un autre superviseur en cas de panne (HA) % (SOURCE VMWARE VSPHERE).
+
+	\subsubsection*{vFabric}
+	La plateforme PaaS de VMware s'est construite après le rachat en 2008 de SpringSource. Aujourd'hui VMware commercialise sa gamme « vFabric » dans laquelle on retrouve % (SOURCE VMWARE VFABRIC) :
+	\begin{description}
+		\item[Tc Server :] une plateforme offrant l'hébergement d'applications Spring, Grail et Java basée sur Tomcat. Cela permet aux développeurs de déployer très facilement leurs applications en laissant la plate-forme répartir la charge; Hyperic : une solution de gestion et de surveillance d'applications sur des infrastructures physiques, virtuelles ou Cloud;
+		\item[Gemfire :] une plate-forme de gestion de données fournissant un accès en temps réel des données réparties dans le monde; Enterprise Ready Server (ERS) : une version entreprise du serveur Web Apache qui distribue et balance automatiquement la charge pour assurer les performances des applications;
+		\item[RabbitMQ :] un service de messagerie de type bus applicatif permettant la communication de plusieurs applications internes ou externes.
+	\end{description}
+%TODO  (SOURCE VMWARE VFABRIC)
+%http://www.vmware.com/fr/products/application-platform/vfabric/overview.html (SOURCE VMWARE VSPHERE) http://www.vmware.com/fr/products/datacenter-virtualization/ vsphere
 
 
 	\subsection{Microsoft}
 %%%%%%%TODO%%%%%%
 
 
-	\chapter{Cas pratique}
-%%%%%%TODO%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\chapter{Contexte d’entreprise}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Analyse des besoins}
+	
+
+%%%%%TODO%%%%%%%%%%	
+	\paragraph*{}
+	\begin{itemize}
+		\item besoin de rentabilité (=compétitivité)
+		\item besoin de sécurité
+		\item besoin de flexibilité (en fonction des projets par ex.)
+	\end{itemize}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Cahier des charges type}
+	
+%%%%%%%TODO%%%%%%%
 
 
 	\chapter*{Conclusion}
