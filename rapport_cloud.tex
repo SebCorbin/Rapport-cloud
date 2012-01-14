@@ -412,8 +412,9 @@ Google Apps a également un atout financier. En effet, aucun équipement ou logi
 		\item[Gemfire :] une plate-forme de gestion de données fournissant un accès en temps réel des données réparties dans le monde; Enterprise Ready Server (ERS) : une version entreprise du serveur Web Apache qui distribue et balance automatiquement la charge pour assurer les performances des applications;
 		\item[RabbitMQ :] un service de messagerie de type bus applicatif permettant la communication de plusieurs applications internes ou externes.
 	\end{description}
-%TODO  (SOURCE VMWARE VFABRIC)
-%http://www.vmware.com/fr/products/application-platform/vfabric/overview.html (SOURCE VMWARE VSPHERE) http://www.vmware.com/fr/products/datacenter-virtualization/ vsphere
+%TODO 
+% (SOURCE VMWARE VFABRIC) http://www.vmware.com/fr/products/application-platform/vfabric/overview.html 
+% (SOURCE VMWARE VSPHERE) http://www.vmware.com/fr/products/datacenter-virtualization/ vsphere
 
 
 	\subsection{Microsoft}
@@ -427,18 +428,64 @@ Google Apps a également un atout financier. En effet, aucun équipement ou logi
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Analyse des besoins}
-	
 
-%%%%%TODO%%%%%%%%%%	
 	\paragraph*{}
-	\begin{itemize}
-		\item besoin de rentabilité (=compétitivité)
-		\item besoin de sécurité
-		\item besoin de flexibilité (en fonction des projets par ex.)
-	\end{itemize}
+	Les entreprises ont principalement besoin d’être rentable pour être compétitives sur le marché. Elles ont également un besoin de sécurité et un besoin de flexibilité pour s’adapter aux projets. En ce qui concerne le Cloud Computing, le besoin le plus important et qui peut être un frein à l’adoption de Cloud Computing est le besoin de sécurité et de confidentialité des données hébergées “dans le nuage”. Les fournisseurs doivent rassurer leur client, mais en sont-ils vraiment capables ?
+
+	\paragraph*{}
+	Forrester a réalisé une enquête (SOURCE FORRESTER) après de 2 200 cadres et décideurs informatiques de grandes entreprises et de PME en Europe (France, Allemagne, Royaume-Uni) et en Amérique du Nord. Cette enquête permet de savoir quelles sont les nouvelles tendances en terme d’équipement en matériel et en terme d’infrastructures de système d’information. Sur les 231 décideurs français interrogés, environ la moitié (39\% des grandes entreprises et 50\% des PME) estiment que la sécurité est un frein important à l’adoption du Cloud Computing dans leur entreprise. Les décideurs craignent en particulier la divulgation d’informations sensibles en cas d’erreur de manipulation ou de piratage.
+
+	\paragraph*{}
+	En effet, de nombreuses questions de posent sur la sécurité, la confidentialité des données ou encore la récupération des données en fin de contrat ou encore leur traçabilité. Quels sont par exemple les engagements contractuels du prestataire opérant le nuage en cas de découverte d'une faille de sécurité ? Les contraintes réglementaires relatives à la traçabilité et à l'usage des informations personnelles ne sont par exemple pas les mêmes en Europe, aux Etats-Unis et en Asie. Or, le nuage peut être hébergé, par définition, n'importe où.
+
+	\paragraph*{}
+	L’informatique dans les nuage est-elle sûre? La Commission Nationales Informatique et Libertés (CNIL) souhaite en partie répondre à cette question. Elle a lancer un vaste consultation publique entre le 17 octobre et le 17 novembre 2011. Elle souhaite identifier « les solutions juridiques et techniques permettant de garantir un haut niveau de protection des données dans un environnement globalisé où la volatilité des données et la multiplicité des serveurs est inscrite dans l'ADN du cloud computing ». (SOURCE CNIL).
+
+	\paragraph*{}
+	Dans la plupart des pays, la loi concernant la protection des données est encore floue. Le patron de Microsoft UK a affirmé que les données des entreprises européennes stockées dans un nuage d’une entreprise américaine étaient “protégées” par la loi “USA Patriot Act”. Cette loi signifie Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism Act ou en français : Loi pour unir et renforcer l'Amérique en fournissant les outils appropriés pour déceler et contrer le terrorisme. (SOURCE PATRIOT ACT). Cette loi autorise le gouvernement, plus particulièrement le FBI, à accéder à l’intégralité des base de données personnelles sans en avertir l’entreprise dans le but de lutter contre le terrorisme.
+
+	\paragraph*{}
+	De plus, le Cloud Computing consiste à partager une seule instance du nuage entre différentes entreprises. On peut donc se demander, comment protéger les applications et les données avec cette architecture. Si un pirate arrive à s’introduire dans l’application d’une entreprise A, il pourrait théoriquement accéder aux applications de l’entreprise B.
+
+	\paragraph*{}
+	Pour palier à ces problèmes de sécurité et de confidentialité, il est important de bien définir les clauses du contrat entre le client et le fournisseur de Cloud Computing.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Cahier des charges type}
+	\section{Question contractuelle et juridique}
+	Lors de la définition d’un contrat de Cloud Computing, la localisation des données, la sécurité ou encore la qualité de services doivent être correctement définis.
+
+	\paragraph*{}
+	Il faut dans un premier temps localiser les données qui seront hébergés dans le cloud. “Selon la loi Informatique et Libertés, récemment mise à jour, le prestataire gérant des données à caractère personnel doit garantir leur confidentialité et leur sécurité" précise Murielle-Isabelle Cahen, avocate à la cour d'appel de Paris . On a donc l’interdiction de transférer ces données vers un pays qui n’offre pas ce niveau de protection. Les fournisseurs américains doivent préciser où se situent les données. De plus, il n’ont pas été reconnus comme offrant un niveau de protection suffisant par la Commission Européenne. Si les données sont situées en Europe, l’obligation déclarative est allégée. C’est le client qui est responsable de la déclaration à la CNIL des données qu’il souhaite héberger. Microsoft Azure est situé aux Etats-Unis et en Europe (à Dublin et à Amsterdam). Dans ce cas, ce fournisseur doit laisser le choix du lieu d’hébergement aux clients. (SOURCE INDEXEL 2)
+	\paragraph*{}
+	Il existe également des types de données qui sont très contraigants. En effet, les données de santés doivent être stockées en France. De plus, les factures électroniques sont soumises à un régime particulier. Murielle-Isabelle Cahen, avocate à la cour d'appel de Paris, indique que "le pays d'accueil doit être lié à la France par une convention prévoyant une assistance mutuelle en matière de fiscalité" (SOURCE INDEXEL 2)
+	\paragraph*{}
+	Les clauses de réversibilité sont également indispensables et il est important de bien les définir dans le contrat. Cette clause permet de récupérer les données si l’entreprise souhaite changer de prestataire ou encore stocker ces données dans son entreprise. Par exemple, avec GMail, il est possible de sauvegarder ces mails mais il faut le faire mail par mail. Il n’est pas envisageable pour une entreprise de réaliser cette action si elle possède des centaines de mail. Le contrat doit ainsi préciser un procéder pour récupérer tous ces mails simplement (dans le format d’orgine ou sous forme SQL par exemple).
+	\paragraph*{}
+	L’une des missions principales d’un fournisseur de Cloud Computing est de rendre disponible l’application et les données 24h/24. En cas, d’indisponibilité des données, on peut instaurer des pénalité au fournisseur. "Nous garantissons 99,95\% de disponibilité pour notre bus de services et 99,9\% pour les instances Azure. En cas de non-respect, nous réduisons de 10\% la facture du mois suivant, et même de 25\% si l'on descend sous 99\%", explique Bernard Ourghanlian, directeur technique de Microsoft France (SOURCE INDEXEL 2).
+	\paragraph*{}
+	Il est important pour une entreprise d’essayer d’obtenir un contrat spécifique pour qu’il corresponde au mieux à ses besoins et à ses attentes. Cependant, les contrats restent très standardisés. Marc Boullier, directeur darketing et innovation du cabinet Solucom, précise que "face à Google ou Microsoft, seuls les très grands comptes peuvent obtenir un contrat spécifique. En attendant une certification européenne ou un label, il faut impérativement faire auditer le contrat par un cabinet d'avocats".
+Les questions juridiques et contractuelles sont très importantes dans le Cloud Computing. Les entreprises clientes ne doivent pas négliger ces points.
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Cas pratique : le cas Valeo}
+
+	\paragraph*{}
+	Valeo est un groupe indépendant entièrement focalisé sur la conception, la fabrication et la vente de composants, de systèmes intégrés et de modules pour l’industrie automobile. C’est un société anonyme française créée en 1923. Valeo est présent opérationnellement dans 27 pays et dispose de 109 sites de productions, 20 centres de recherche, 38 centres de développement et 10 plateformes de distribution. En 2010, Valeo a réalisé 9 632 M\euro{} de chiffre d’affaire.
+	\paragraph*{}
+	Valeo souhaite changer son système de messagerie afin d’effectuer des économies et d'homogénéiser son système d’information dans l’ensemble des pays. Cette entreprise a choisi la suite Google Apps avec le service de messagerie Google Mail, la suite bureautique Google Docs et le chat Google Talk. Ce service coûte 4\euro{} par mois et par utilisateur.
+	\paragraph*{}
+	Valeo a fait appel à Capgemini pour l’intégration de cette solution chez Valeo. Capegemini est l’un des premiers intégrateurs de Google Apps en France. Certains besoins n’étaient pas couvert par les Google Apps. Capegemini a donc développé et mis en oeuvre les applications manquantes. L’intégration s’est effectué en plusieurs étapes. 2 700 utilisateurs ont commencé à utiliser Google Apps en mars 2009. Puis tout au long de l’année 2009, les 27 pays sont passés progressivement à leur nouvelle messagerie. La montée en charge a donc été progressive. Valeo refuse de publier les chiffres exacts du coût de migration de la solution. Cependant, il affirme que si les utilisateurs s’impliquent et profitent rapidement des fonctions collaboratives, le retour sur investissement est d'un an.
+	\paragraph*{}
+	De plus, Valeo s'est refusé à donner la moindre précision sur les engagements contractuels pris par Google par exemple en matière de continuité d'activité de la solution ou de capacité pour l'équipementier à sortir du contrat. Il affirme que les données sont hébergées aux Etats-Unis et dans d’autres pays, sans préciser ces derniers. Il indique également que certaines informations confidentielles sont chiffrées. (SOURCE VALEO)
+	\paragraph*{}
+	En refusant de publier des informations sur des questions contractuelles ou juridique, Valeo montre que les questions de sécurité, de confidentialité ou de réversibilité sont des questions sensibles dans un contrat de Cloud Computing.
+% (SOURCE FORRESTER) http://www.forrester.com/ER/Press/Release/0,1769,1315,00.html 
+% (SOURCE CNIL) http://www.cnil.fr/la-cnil/actualite/article/article/cloud-computing-la-cnil-engage- le-debat/ 
+% (SOURCE INDEXEL) http://www.indexel.net/actualites/cloud-computing-la-securite-en-question-3448.html 
+% (SOURCE PATRIOT ACT) http://fr.wikipedia.org/wiki/USA_PATRIOT_Act 
+% (SOURCE INDEXEL 2) http://www.indexel.net/article/cloud-computing-les-freins-contractuels- et-juridiques-3168.html 
+% (SOURCE VALEO) http://www.lemagit.fr/article/google-bureautique-cloud-computing-projets- cloud/3405/1/valeo-roule-pour-les-google-apps-mais-sans-soulever-capot/
 	
 %%%%%%%TODO%%%%%%%
 
@@ -446,12 +493,12 @@ Google Apps a également un atout financier. En effet, aucun équipement ou logi
 	\chapter*{Conclusion}
 %%%%TODO%%%%%%%
 	
-
+% TODO Remplacer (SOURCE *) par les liens vers la sitographie
 	
 	% Table des matières
 	\addcontentsline{toc}{chapter}{Tables des matières}
 	\tableofcontents
-	\newpage
+
 
  	% Interlignage 1,5
 	\end{onehalfspace}
