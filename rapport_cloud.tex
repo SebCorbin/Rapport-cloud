@@ -312,36 +312,53 @@ En remontant la chaîne de traitement en partant de l'application se trouvent :
 	
 	\paragraph*{}
 	En février 2009, suite à quelques ennuis chez Google, on pouvait lire ceci : \\
-	\textit{Beaucoup de gens nous demandent ce qui s'est passé, alors nous avons pensé que
-vous aimeriez avoir une explication. Ce matin, il y avait une maintenance de
-routine dans l'un de nos data-centers européens. Cela ne cause généralement
-aucun problème puisque les comptes sont simplement servis depuis d'autres datacenters pendant ce temps.
-
-Cependant, un effet de bord inattendu d'un nouveau code qui essaye de garder les
-données de chaque client proche de son lieu géographique a alors provoqué la
-surcharge d'un autre data-center en Europe, ce qui a entraîné des problèmes en
-cascade d'un data-center à l'autre. Cela nous a pris un peu plus d'une heure pour
-tout remettre en marche.}
+	\textit{Beaucoup de gens nous demandent ce qui s'est passé, alors nous avons pensé que vous aimeriez avoir une explication. Ce matin, il y avait une maintenance de routine dans l'un de nos data-centers européens. Cela ne cause généralement aucun problème puisque les comptes sont simplement servis depuis d'autres datacenters pendant ce temps. \\ Cependant, un effet de bord inattendu d'un nouveau code qui essaye de garder les données de chaque client proche de son lieu géographique a alors provoqué la surcharge d'un autre data-center en Europe, ce qui a entraîné des problèmes en cascade d'un data-center à l'autre. Cela nous a pris un peu plus d'une heure pour tout remettre en marche.}
 
 	\paragraph*{}
 	Ce qui prouve bien que personne, même les plus grands ne sont à l'abri de ce genre de mésaventures. Voilà pourquoi il est extrêmement difficile en tant que fournisseur d'applications d'assurer une qualité de service à tout épreuve.
 
 	\paragraph*{}
-	Enfin, dernière raison pour laquelle il est difficile de se lancer sur le marché et d'offrir une
+	Une autre raison pour laquelle il est difficile de se lancer sur le marché et d'offrir une
 qualité de service irréprochable, c'est le vandalisme et le piratage informatique. Le vandalisme et le piratage sont deux choses distinctes. 
 
 	\paragraph*{}
-	Twitter a été victime de vandalisme en 2009. Twitter est un outil de réseau social et de micro-blogging qui permet à l'utilisateur d'envoyer gratuitement des messages, appelés des tweets (gazouillis en français), de 140 caractères maximum par Internet, par messagerie
-instantanée ou par SMS. Twitter fait partie de ces services fournis uniquement à travers le
-Web et dont l'infrastructure est entièrement distribuée à travers le monde. 
-	
+	Twitter a été victime de vandalisme en 2009 (SOURCE TWITTER). Twitter est un outil de réseau social et de micro-blogging qui permet à l'utilisateur d'envoyer gratuitement des messages, appelés des tweets (gazouillis en français), de 140 caractères maximum par Internet, par messagerie instantanée ou par SMS. Twitter fait partie de ces services fournis uniquement à travers le
+Web et dont l'infrastructure est entièrement distribuée à travers le monde.\\
+
+Ce n'était pas la première fois que la plateforme était prise pour cible par les pirates, mais il semble que c'était la première fois que le site était indisponible pendant plusieurs heures. Pour quelles raisons un pirate en voudrait-il à Twitter au point de rendre son site
+indisponible ? Au rang des motivations des dénis de service, on compte :
+
 	\begin{itemize}
-		\item Méthodologie pointue et différente
-		\item Infrastructure
-		\item Défaillance et problèmes techniques : l’application doit être accessible à tout moment
-		\item Piratage
-		\item Protection des données - sécurité
+		\item le chantage : principale motivation pour les attaques. D'ordinaire, ce type d'attaque vise plutôt des sites de e-commerce, ou de jeu d'argent en ligne : c'est à dire, des sociétés dont l'existence même repose entièrement sur leur visibilité sur Internet;
+		\item la censure : il est possible que des messages aient été relayés sur Twitter, et que ces
+messages n'aient pas plu à quelqu'un, qui aurait décidé en conséquence d'attaquer le site. Ce type d'attaques est monnaie courante, de nombreux chercheurs en sécurité en faisant régulièrement les frais. Dans le cas de Twitter, il ne serait pas étonnant que parmi les millions de tweets postés chaque jour, certaines aient déplu à des pirates, le site étant devenu un relais fulgurant des rumeurs et de la contestation politique.
+		\item la démonstration de force : les pirates cherchent souvent à démontrer leurs capacités
+de nuisance sur des cibles réelles, de manière à séduire des « clients » potentiels qui pourraient faire appel à leurs services.
 	\end{itemize}
+
+Une autre motivations est l'attaque pour le plaisir, ou encore l'attaque politique par une puissance étrangère.
+
+	\paragraph*{} 
+	Ce qu'il faut retenir, c'est que ce type d'attaques est monnaie courante, de nombreuses sociétés en font les frais jour après jour. Se prémunir contre elles est très complexe. Chaque fois qu'une solution de filtrage est mise en place, les pirates modifient leur attaque : en mobilisant d'autres machines de leur botnet pour multiplier les adresses IP sources, en modifiant les requêtes ou les paquets de données envoyés ou en prenant pour cible la partie applicative du site web plutôt que les couches réseaux.
+	
+	\paragraph*{}
+	Le 16 juillet 2009, un pirate surnommé Hacker Croll est parvenu à accéder à de nombreux documents confidentiels de la société qui exploite Twitter. Le vol aurait été commis en piratant notamment les comptes Gmail de plusieurs employés et en exploitant la faiblesse des mots de passe choisis
+et des failles dans le système de récupération de ces derniers. Les informations dérobées vont de la liste des employés et leurs préférences alimentaires à des numéros de cartes de crédit, des documents internes, des contrats confidentiels ou des informations financières. \\
+Ce genre d'attaque est déjà assez grave en soit, mais lorsque l'on ajoute une couche de cloud computing entre l'attaquant et les données convoitées, la situation devient beaucoup plus critique. Que pourrait-il se passer si un individu mal intentionné accédait à l'infrastructure d'un fournisseur d'infrastructures ? Il pourrait probablement obtenir un accès à toutes les informations confidentielles non plus uniquement de la société responsable de l'infrastructure, mais également à celles de tous les clients hébergés sur l'infrastructure en question.\\
+Au niveau de la législation, il n'existe pas encore de cadre légal clair et bien défini, mais le manque de sécurisation et la négligence de certains utilisateurs pourraient ne pas
+tarder à mettre la plupart des fournisseurs d'infrastructures et de plateformes dans des
+situations plutôt inconfortables.
+
+	\paragraph*{}
+	Pour éviter toutes formes de piratage, il est important de sécuriser les données des clients. La sécurisation des données est ainsi un challenge pour les fournisseurs de Cloud Computing. 
+	
+	\paragraph*{}
+	Pour finir, le dernier inconvénient est le financement. Il faut trouver un moyen de maintenir son activité alors qu'il y a peu d'argent qui rentre dans la société. Contrairement au modèle traditionnel où un seul marché pouvait rapporter plusieurs dizaines de milliers d'euros, les contrats SaaS sont beaucoup moins profitables. Il est ainsi beaucoup plus difficile de maintenir une activité au départ le temps que les applications génèrent suffisamment de bénéfices.
+	
+	
+	
+	%%%%%%(SOURCE TWITTER) http://www.lefigaro.fr/web/2010/03/24/01022-20100324ARTFIG00758-un-francais-arrete-pour-avoir-pirate-twitter-.php
+	
 	
 	\subsection{Les inconvénients côté clients}
 	
