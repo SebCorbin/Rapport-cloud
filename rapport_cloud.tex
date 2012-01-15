@@ -13,7 +13,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{shorttoc}
-\usepackage{glossaries}
+\usepackage[toc,nonumberlist]{glossaries}
 \usepackage{xcolor}
 \usepackage{eurosym}
 \usepackage{amsmath}
@@ -87,15 +87,13 @@
 	Le Cloud a émergé pour répondre aux exigences de continuité de qualité de service. Il exprime la mise en flexibilité de 4 niveaux : l’application (en contact avec le client), la plateforme (qui exécute les applications), l’infrastructure (qui est le support de la plateforme) et les données (qui sont fournies sur demande).
 	
 	\paragraph*{}
-%TODO Source HyperCloudMarket
-	Plus de 100 milliards d’euros (selon CloudHyperMarket) ont été investi dans le cloud computing. Les deux principaux acteurs du Cloud Computing sont Microsoft et Google. Microsoft a investi 9,6 milliards de dollar en 2011 dans le cloud soit 90\% de ses dépenses en recherche et développement. 4 millions d’entreprises ont fait confiance à Google et sont passées à Google Apps. Elles profitent à présent de grandes améliorations en termes de collaboration et d'économies.
+	Plus de 80 milliards de dollar ont été investi dans le cloud computing en 2010 par le gouvernement américain selon leur politique "Cloud-first"\cite{source:policy}. Les deux principaux acteurs du Cloud Computing sont Microsoft et Google. Microsoft a investi 9,6 milliards de dollar en 2011 dans le cloud soit 90\% de ses dépenses en recherche et développement. 4 millions d’entreprises ont fait confiance à Google et sont passées à Google Apps. Elles profitent à présent de grandes améliorations en termes de collaboration et d'économies.
 	
 	\paragraph*{}
 	On trouve les premières traces du “cloud computing” dans les années 1960, quand Johan McCarty affirmait que cette puissance de traitement informatique serait accessible au public dans le futur. On parlait alors de Bureaux de Services (Service bureaus). C’est l’ancêtre du Software as a Service. Leur point commun est qu’ils offrent un service en échange d’honoraires. Leur application dans les domaines est vaste : banques, assurances, etc. Une entreprise de ce type offre à ses clients son expertise dans un domaine : cela correspond tout à fait avec la notion actuelle de Software As A Service (SaaS) et c’est par l’avancée technologique des réseaux de communications que cette notion de “bureaux de service”  s’est énormément développée dans l’informatique.
 	
 	\paragraph*{}
 	Cependant, les débuts du cloud computing se situent dans la notion de Fournisseur de Service d’Application (ou en anglais Application Service Provider, ASP), présente au début des années 2000. Les premières applications à avoir migré dans le nuage sont les messageries, les outils collaboratifs, le CRM*, les environnements de développement. Amazon, Yahoo et Google sont les premiers à se lancer dans ce concept. Ces deux derniers offrent au grand public des applications simples et gratuites telles que la messagerie ou la gestion de calendriers en ligne.
-%TODO Glossaire CRM
 	
 	\paragraph*{}
 	Le Grid Computing est une infrastructure virtuelle constituée d’un ensemble de ressources informatiques. Ces ressources sont partagées (elles sont mises à disposition des consommateurs), distribuées (elles sont situées dans des lieux géographiques différents), hétérogènes, coordonnées, autonomes et délocalisées (les ressources peuvent appartenir à plusieurs sites). On parle de “fermes de serveurs” (\textit{computer cluster} en anglais) pour désigner cette technique qui consiste à regrouper plusieurs ordinateurs / serveurs indépendants. Cette technique permet une gestion globale, augmente la disponibilité des ressources, facilite la montée en charge et permet une répartition des charges entre les différents serveurs.
@@ -110,8 +108,6 @@
 	La crise de 2008-2009 a fait de gros dégâts dans la plupart des secteurs d’activités. La principale préoccupation des gérants d’entreprise est d’économiser afin de limiter les effets de la crise sur leur structure. Le service informatique est un service qui coûte cher. En effet, il faut prendre en compte les salaires, les assurances, les locaux, le matériel informatique, ... Ces dépenses peuvent être réduites voire totalement éliminées grâce au cloud computing. Le cloud computing permet de s'affranchir des coûts d'installation et de maintenance du matériel informatique et des logiciels en interne, on peut également s'affranchir des employés effectuant cette tâche, et par conséquent de leur salaire, de leur matériel et de leurs locaux. Une économie non négligeable à l'échelle d'une petite comme d'une grande entreprise.
 
 	Mais les gains en termes de coût ne sont pas la seule raison qui peuvent pousser les entreprises à choisir le cloud computing. Devant les besoins d'évolutivité et de flexibilité des grands acteurs de l'informatique, les notions comme le Grid Computing ou la virtualisation sont devenues incontournables.
-	
-	% TODO : faire un renvoi vers le grid computing
 	
 	\paragraph*{}
 	Nous étudierons dans ce rapport \textbf{l’apport des technologies du Cloud dans les entreprises}.
@@ -276,7 +272,6 @@ Cet avantage en apporte un autre, celui de la mobilité. En effet, les machines 
 	 
 	\subsection{Les inconvénients du côté fournisseur}
 
-%%%%%TODO%%%%%%%%%%
 	\paragraph*{}
 	Il existe de nombreuses approches différentes à la façon d'écrire des applications SaaS. Certains points peuvent être difficiles à concevoir. C'est le cas de l'isolement des clients, le caractère multi-locataire de l'application, l'approvisionnement et la flexibilité. Certes il existe désormais des sociétés spécialisées dans la location de plateformes dédiées à ce genre de problématiques, mais il n'en ressort pas moins que ce sont des concepts totalement nouveaux pour la plupart des programmeurs traditionnels. Certaines personnes pensent (à tort) que le marché du cloud computing est dominé par quelques entreprises jeunes et dynamiques dont c'est le secteur d'activité principal. Mais
 cette vision des choses est erronée, la plupart des grandes entreprises traditionnelles de logiciel se lancent également sur le marché.\\
@@ -512,12 +507,9 @@ Amazon, premièrement une plateforme d'e-commerce, propose depuis juillet 2002 d
 	Google Apps fournit une suite de Cloud Computing personnalisable comprenant une messagerie (Google Mail), un agenda (Google Calendar), des outils bureautiques (Google Docs) et un chat (Google Talk). Google propose également Google Site qui met à disposition un CMS* à la demande pouvant concevoir des sites Web sans aucun développement.\newline
 Le point fort de Google Apps est sa portabilité. Sur n’importe quel navigateur web ou encore à partir d’application mobile, on peut accéder à nos mails ou nos documents. Google Apps n’est pas destiné uniquement aux startups, de grandes entreprises ont choisis Google comme fournisseur de Cloud Computing. Ces entreprises peuvent ainsi travailler en réseau avec leurs clients.\newline
 Google Apps a également un atout financier. En effet, aucun équipement ou logiciel n’est nécessaire en s’abonnant à ces services. Le coût de cette solution est d’environ 40\euro{} par an et par utilisateur. Pour finir, on n’a pas besoin de mettre à jour les services, Google met à jour régulièrement ses applications en ligne pour corriger d'éventuels problèmes et ajouter de nouvelles fonctionnalités. (Source Google Apps \cite{source:ggapp})
-%TODO (SOURCE GOOGLE APP ENGINE) http://brocoli.developpez.com/articles/presentation/google- app-engine/ 
-% (SOURCE GOOGLE APPS) http://cloudcomputing.fr/google-apps.php
 %Glossaire: CMS (Content Management System ou système de gestion de contenu) : logiciel destiné à la conception et à la mise eà jour dynamique de site Web ou d’application multimédia.
 
 	\subsection{Salesforce.com}
-%%%%%%%%%TODO%%%%%%%%%
 
 	\paragraph*{}
 	Salesforce.com est une entreprise créée en 1999 aux Etats-Unis. Elle distribue des logiciels de gestion basés sur Internet et héberge des applications d'entreprises. Elle est surtout connue au niveau international pour ses solutions en gestion de la relation client (CRM). Basées sur la base de données database.com et une place de marché de logiciels appexchange, les solutions de Salesforce.com sont regroupées en plusieurs grandes catégories : 
@@ -539,18 +531,15 @@ Créé en juin 2010, Chatter est une plate-forme de collaboration en temps-réel
 
 	Depuis 2008, VMware n’a cessé d’investir dans le marché du Cloud Computing en rachetant différentes entreprises comme Zimbra (application SaaS de collaboration) ou SpringSource pour son offre PaaS avec vFabric. Aujourd’hui VMware propose une IaaS nommé vSphere et une PaaS nommé vFabric.
 	\subsubsection*{vSphere}
-	VSphere permet de créer des infrastructure de Cloud Computing et permet aux utilisateurs d'exécuter les applications critiques en toute sécurité et de répondre plus rapidement aux besoins de leur entreprise. Cette solution propose du calcul (vCompute), du stockage (vStorage) et du réseau (vNetwork). Elle permet de gagner en flexibilité. En effet, le client peut développer une infrastructure à la demande et facturée au gré de des besoins. Le client va également pouvoir gérer son espace de stockage et les performances de son infrastructure. Différentes éditions de vSphere sont proposées pour permettre de s’adapter aux petites ou aux moyennes et grandes entreprises. De plus, différents services sont proposés comme la migration de machines virtuelles à chaud d’un superviseur à un autre (VMotion), la migration à chaud de sources de stockages (Storage VMotion) ou encore le redémarrage d’une machine virtuelle sur un autre superviseur en cas de panne (HA) % (SOURCE VMWARE VSPHERE).
+	VSphere permet de créer des infrastructure de Cloud Computing et permet aux utilisateurs d'exécuter les applications critiques en toute sécurité et de répondre plus rapidement aux besoins de leur entreprise. Cette solution propose du calcul (vCompute), du stockage (vStorage) et du réseau (vNetwork). Elle permet de gagner en flexibilité. En effet, le client peut développer une infrastructure à la demande et facturée au gré de des besoins. Le client va également pouvoir gérer son espace de stockage et les performances de son infrastructure. Différentes éditions de vSphere sont proposées pour permettre de s’adapter aux petites ou aux moyennes et grandes entreprises. De plus, différents services sont proposés comme la migration de machines virtuelles à chaud d’un superviseur à un autre (VMotion), la migration à chaud de sources de stockages (Storage VMotion) ou encore le redémarrage d’une machine virtuelle sur un autre superviseur en cas de panne (HA) \cite{source:vsphere}.
 
 	\subsubsection*{vFabric}
-	La plateforme PaaS de VMware s'est construite après le rachat en 2008 de SpringSource. Aujourd'hui VMware commercialise sa gamme « vFabric » dans laquelle on retrouve % (SOURCE VMWARE VFABRIC) :
+	La plateforme PaaS de VMware s'est construite après le rachat en 2008 de SpringSource. Aujourd'hui VMware commercialise sa gamme « vFabric » dans laquelle on retrouve \cite{source:vfabric} :
 	\begin{description}
 		\item[Tc Server :] une plateforme offrant l'hébergement d'applications Spring, Grail et Java basée sur Tomcat. Cela permet aux développeurs de déployer très facilement leurs applications en laissant la plate-forme répartir la charge; Hyperic : une solution de gestion et de surveillance d'applications sur des infrastructures physiques, virtuelles ou Cloud;
 		\item[Gemfire :] une plate-forme de gestion de données fournissant un accès en temps réel des données réparties dans le monde; Enterprise Ready Server (ERS) : une version entreprise du serveur Web Apache qui distribue et balance automatiquement la charge pour assurer les performances des applications;
 		\item[RabbitMQ :] un service de messagerie de type bus applicatif permettant la communication de plusieurs applications internes ou externes.
 	\end{description}
-%TODO 
-% (SOURCE VMWARE VFABRIC) http://www.vmware.com/fr/products/application-platform/vfabric/overview.html 
-% (SOURCE VMWARE VSPHERE) http://www.vmware.com/fr/products/datacenter-virtualization/ vsphere
 
 
 	\subsection{Microsoft}
@@ -567,7 +556,7 @@ Commercialisée en février 2010, elle propose les services suivants :
 \item Azure Virtual Network
 \end{itemize}
 
-Les datacentres sont présents en Amérique du Nord, en Asie et en Europe.
+Les data-centers sont présents en Amérique du Nord, en Asie et en Europe.
 
 %TODO Office 365
 	
@@ -629,38 +618,75 @@ Les questions juridiques et contractuelles sont très importantes dans le Cloud 
 	De plus, Valeo s'est refusé à donner la moindre précision sur les engagements contractuels pris par Google par exemple en matière de continuité d'activité de la solution ou de capacité pour l'équipementier à sortir du contrat. Il affirme que les données sont hébergées aux Etats-Unis et dans d’autres pays, sans préciser ces derniers. Il indique également que certaines informations confidentielles sont chiffrées. (Source Valeo \cite{source:valeo})
 	\paragraph*{}
 	En refusant de publier des informations sur des questions contractuelles ou juridique, Valeo montre que les questions de sécurité, de confidentialité ou de réversibilité sont des questions sensibles dans un contrat de Cloud Computing.
-% (SOURCE FORRESTER) http://www.forrester.com/ER/Press/Release/0,1769,1315,00.html 
-% (SOURCE CNIL) http://www.cnil.fr/la-cnil/actualite/article/article/cloud-computing-la-cnil-engage- le-debat/ 
-% (SOURCE INDEXEL) http://www.indexel.net/actualites/cloud-computing-la-securite-en-question-3448.html 
-% (SOURCE PATRIOT ACT) http://fr.wikipedia.org/wiki/USA_PATRIOT_Act 
-% (SOURCE INDEXEL 2) http://www.indexel.net/article/cloud-computing-les-freins-contractuels- et-juridiques-3168.html 
-% (SOURCE VALEO) http://www.lemagit.fr/article/google-bureautique-cloud-computing-projets- cloud/3405/1/valeo-roule-pour-les-google-apps-mais-sans-soulever-capot/
-	
-%%%%%%%TODO%%%%%%%
 
-
+	%%%%%%%%%%%%%%%%%%%
 	\chapter*{Conclusion}
-%%%%TODO%%%%%%%
+	%%%%%%%%%%%%%%%%%%%
+
+Le Cloud Computing est en plein essor et peut apporter de nombreux avantages pour les entreprises. Cependant, certaines entreprises sont sceptiques et hésitent à passer au Cloud Computing. En effet, de nombreux points négatifs sont abordés dans les médias : la manque de fiabilité, le manque de sécurité ou encore le manque de contrôle. Enfin, certaines entreprises mesurent l'importance de passer au Cloud Computing car cette nouvelle architecture permet de réaliser des économies et apporte plus de flexibilité qu’une application lourde.
+\paragraph*{}
+De nombreuses solutions techniques existent : la virtualisation de système d’exploitation, d’applications, de stockage et le Cloud privé, publique ou hybride. Ces solutions permettent de répondre au mieux aux attentes des clients et peuvent parfois limiter les inconvénients. On peut héberger des données personnelles dans un Cloud privé pour limiter les problèmes de sécurité et de confidentialité des données.
+\paragraph*{}
+Enfin, avant de choisir une solution de Cloud Computing, il est important de se renseigner sur les différents fournisseurs avant d’en choisir un. De plus, il faut négocier le contrat avant de le signer pour limiter les problèmes de confidentialité. 
 	
-	
-	% Table des matières
-	\addcontentsline{toc}{chapter}{Tables des matières}
-	\tableofcontents
-	
-	\clearpage
-	\renewcommand\bibname{Sitographie}
-	\addcontentsline{toc}{chapter}{Sitographie}
+
+	% Liste des figures
+	\addcontentsline{toc}{chapter}{Liste des figures}
+	\listoffigures
+
+	% Sitographie	
+	\renewcommand\bibname{Webographie}
+	\addcontentsline{toc}{chapter}{Webographie}
+\begin{flushleft}
 	\begin{thebibliography}{9}
-	\bibitem{source:twitter}  Article du Figaro du le piratage de Twitter http://www.lefigaro.fr/web/2010/03/24/01022-20100324ARTFIG00758-un-francais-arrete-pour-avoir-pirate-twitter-.php
-	\bibitem{source:valeo} Communiqué Valéo http://www.lemagit.fr/article/google-bureautique-cloud-computing-projets- cloud/3405/1/valeo-roule-pour-les-google-apps-mais-sans-soulever-capot/
-	\bibitem{source:ggappengine} Article sur Google App Engine http://brocoli.developpez.com/articles/presentation/google- app-engine/
-	\bibitem{source:ggapp} http://cloudcomputing.fr/google-apps.php
-	\bibitem{source:forrester} http://www.forrester.com/ER/Press/Release/0,1769,1315,00.html
-	\bibitem{source:cnil} http://www.cnil.fr/la-cnil/actualite/article/article/cloud-computing-la-cnil-engage- le-debat/
-	\bibitem{source:indexel} http://www.indexel.net/actualites/cloud-computing-la-securite-en-question-3448.html
-	\bibitem{source:patriotact} http://fr.wikipedia.org/wiki/USA\_PATRIOT\_Act 
-	\bibitem{source:indexel2} http://www.indexel.net/article/cloud-computing-les-freins-contractuels- et-juridiques-3168.html 
+	\bibitem{source:policy}  Article : \textit{US government adopts ‘cloud-first’ policy} \\
+http://www.smartplanet.com/blog/business-brains/us-government-adopts-8216cloud-first-policy/11943 (vu en déc. 2011)
+
+	\bibitem{source:twitter}  Article, Le Figaro : \textit{Un Français arrêté pour avoir piraté Twitter} \\
+http://www.lefigaro.fr/web/2010/03/24/01022-20100324ARTFIG00758-un-francais-arrete-pour-avoir-pirate-twitter-.php (vu en déc. 2011)
+
+	\bibitem{source:valeo} Article : \textit{Valeo roule pour les Google Apps... mais sans soulever le capot}\\
+http://www.lemagit.fr/article/google-bureautique-cloud-computing-projets-cloud/3405/1/valeo-roule-pour-les-google-apps-mais-sans-soulever-capot/ (vu en déc. 2011)
+
+	\bibitem{source:ggappengine} Article : \textit{Introduction à Google App Engine} \\
+http://brocoli.developpez.com/articles/presentation/google-app-engine/ (vu en déc. 2011)
+
+	\bibitem{source:ggapp} Article : \textit{Cloud Computing Google Apps} \\
+http://cloudcomputing.fr/google-apps.php (vu en déc. 2011)
+
+	\bibitem{source:forrester} Communiqué de presse : \textit{Forrester: Security Concerns Hinder Cloud Computing Adoption} \\
+http://www.forrester.com/ER/Press/Release/0,1769,1315,00.html (vu en déc. 2011)
+
+	\bibitem{source:cnil} Article : \textit{Cloud computing : la CNIL engage le débat} \\
+http://www.cnil.fr/la-cnil/actualite/article/article/cloud-computing-la-cnil-engage-le-debat/ \\ (vu en déc. 2011)
+
+	\bibitem{source:indexel} Article : \textit{Cloud computing : la sécurité en question} \\
+http://www.indexel.net/actualites/cloud-computing-la-securite-en-question-3448.html (vu en déc. 2011)
+
+	\bibitem{source:patriotact} Article : \textit{USA PATRIOT Act} \\
+http://fr.wikipedia.org/wiki/USA\_PATRIOT\_Act (vu en déc. 2011)
+
+	\bibitem{source:indexel2} Article : \textit{Cloud computing : les freins contractuels et juridiques} \\
+http://www.indexel.net/article/cloud-computing-les-freins-contractuels-et-juridiques-3168.html \\ (vu en déc. 2011)
+
+	\bibitem{source:vsphere} Documentation : \textit{VMware vSphere™} \\
+http://www.vmware.com/fr/products/datacenter-virtualization/vsphere (vu en déc. 2011)
+
+	\bibitem{source:vfabric} Documentation : \textit{VMware vFabric ™} \\
+http://www.vmware.com/fr/products/application-platform/vfabric/overview.html (vu en déc. 2011)
 	\end{thebibliography}
+\end{flushleft}
+
+	% Glossaire
+	\renewcommand*\glossaryname{Glossaire}
+	\deftranslation{Glossary}{Glossaire}
+%	\addcontentsline{toc}{chapter}{Glossaire}
+	\glsaddall
+	\printglossaries
+
+	% Table des matières
+%	\addcontentsline{toc}{chapter}{Tables des matières}
+	\tableofcontents
 
  	% Interlignage 1,5
 	\end{onehalfspace}
