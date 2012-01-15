@@ -270,10 +270,61 @@ Cet avantage en apporte un autre, celui de la mobilité. En effet, les machines 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\section{Les inconvénients du Cloud}
 	
+	\paragraph*{}
+	Maintenant que nous en savons un peu plus sur les avantages du Cloud Computing, il est temps de s'intéresser aux inconvénients. En effet, avant de choisir une solution de Cloud Computing, il est important de prendre en compte les inconvénients de ce modèle. Il y a des inconvénients aussi bien du côté du fournisseur que du côté du client.
+	 
 	\subsection{Les inconvénients côté fournisseur}
 
 %%%%%TODO%%%%%%%%%%
 	\paragraph*{}
+	Il existe de nombreuses approches différentes à la façon d'écrire des applications SaaS. Certains points peuvent être difficile à concevoir. C'est le cas de l'isolement des clients, le caractère multi-locataire de l'application, l'approvisionnement et la flexibilité. Certes il existe désormais des sociétés spécialisées dans la location de plateformes dédiées à ce genre de problématiques, mais il n'en ressort pas moins que ce sont des concepts totalement nouveaux pour la plupart des programmeurs traditionnels. Certaines personnes pensent (à tort) que le marché du cloud computing est dominé par quelques entreprises jeunes et dynamiques dont c'est le secteur d'activité principal. Mais
+cette vision des choses est erronée, la plupart des grandes entreprises traditionnelles de logiciel se lancent également sur le marché.\\
+D'un manière générale, il est assez ardu pour une entreprise dont ce n'est pas le cœur de métier de venir chasser sur les terres du cloud computing. Ce n'est pas simplement une nouvelle façon de programmer, c'est un domaine d'activité complètement différent qui demande de nouvelles connaissances et une vision renouvelée du marché.
+
+	\paragraph*{}
+	L'infrastructure est importante pour une solution de Cloud Computing. En effet, si une solution SaaS n'est pas correctement architecturée, l'application peut devenir inaccessible.	Généralement, cela se produira parce que l'infrastructure n'a pas été pensée pour accueillir autant de demande, il faut donc éviter le plus possible de remettre au lendemain les questions dites de flexibilité par rapport à la charge.\\
+	Malheureusement, tout le monde n'est pas expert en flexibilité, que ce soit au niveau de l'infrastructure matérielle que du logiciel lui-même, et surtout, de tels concepts sont plutôt ardus à mettre en œuvre au premier abord. Classiquement, les applications proposées en tant que service sont totalement autonomes :
+	\begin{itemize}
+\item le client découvre le site;
+\item le client peut tester gratuitement la solution de lui-même;
+\item le client peut acheter une licence en ligne sans intervention humaine;
+\item le client peut jouir de sa licence immédiatement.
+	\end{itemize}
+	Dans le modèle SaaS, aucune intervention humaine n'est nécessaire, ce qui est à la fois un avantage et un inconvénient. En effet, si la solution devient très fameuse, on ne peut rien faire pour ralentir le flot de nouveaux utilisateurs. C'est souvent ce qui arrive à de nombreux nouveaux services.
+	
+	\paragraph*{}
+	Certaines entreprises restent réfractaires à l'adoption du Cloud Computing car elles ont peur que les applications soient défaillante et qu'elles ne soient plus accessible. Généralement, l'application devient injoignable de façon globale, mais il peut également arriver que seules certaines régions du monde se voient couper l'accès à leurs applicatifs.
+	
+	 \paragraph*{}
+	 Si la défaillance ne vient pas d'un problème technique, elle peut provenir d'une erreur humaine. Peu de gens peuvent imaginer la lourdeur et la difficulté de maintenir une application SaaS. Il existe
+tellement de maillons qui s'emboîtent les uns dans les autres au niveau matériel et logiciel que cela représente une tâche redoutablement complexe.\\
+En remontant la chaîne de traitement en partant de l'application se trouvent :
+	\begin{itemize}
+		\item un ou plusieurs serveurs mandataires et/ou d'équilibrage de charge
+		\item un ou plusieurs mécanismes de cache et de préparation des données
+		\item un ou plusieurs serveurs d'application indépendants ou dépendants les uns des autres
+		\item un ou plusieurs serveurs de base de données indépendants ou dépendants
+		\item un ou plusieurs serveurs de gestion des emails (envoi, réception et stockage)
+		\item un ou plusieurs serveurs de contenu
+		\item un ou plusieurs serveurs de résolution de noms
+	\end{itemize}
+	On a également les data-centers, les composants électroniques. Lorsqu'on est responsable du bon fonctionnement de ce genre de chaîne de traitement, la moindre erreur humaine, même minime peut entraîner ce que l'on appelle une réaction en chaîne et rendre les applications SaaS indisponibles.\\
+	En février 2009, suite à quelques ennuis chez Google, on pouvait lire ceci : \\
+	\textit{Beaucoup de gens nous demandent ce qui s'est passé, alors nous avons pensé que
+vous aimeriez avoir une explication. Ce matin, il y avait une maintenance de
+routine dans l'un de nos data-centers européens. Cela ne cause généralement
+aucun problème puisque les comptes sont simplement servis depuis d'autres datacenters pendant ce temps.
+
+Cependant, un effet de bord inattendu d'un nouveau code qui essaye de garder les
+données de chaque client proche de son lieu géographique a alors provoqué la
+surcharge d'un autre data-center en Europe, ce qui a entraîné des problèmes en
+cascade d'un data-center à l'autre. Cela nous a pris un peu plus d'une heure pour
+tout remettre en marche.}
+
+	\paragraph*{}
+	Ce qui prouve bien que personne, même les plus grands ne sont à l'abri de ce genre de mésaventures. Voilà pourquoi il est extrêmement difficile en tant que fournisseur d'applications d'assurer une qualité de service à tout épreuve.
+
+	
 	\begin{itemize}
 		\item Méthodologie pointue et différente
 		\item Infrastructure
