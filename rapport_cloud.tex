@@ -17,6 +17,8 @@
 \usepackage{xcolor}
 \usepackage{eurosym}
 \usepackage{amsmath}
+\usepackage{wrapfig}
+\usepackage[small,bf]{caption}
 
 \include{chapterStyle}
 
@@ -474,6 +476,12 @@ On peut héberger les applications dans un Cloud public qui utilisera des donné
 	
 	
 	\subsection{Amazon}
+		\begin{wrapfigure}{r}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.3\textwidth]{aws.png} 
+			\caption{Le logo d'AWS}
+		\end{wrapfigure}
+
 Amazon, premièrement une plateforme d'e-commerce, propose depuis juillet 2002 des services en ligne à d'autres entreprises à travers Amazon Web Services (AWS). Cette collection de services informatiques distants est premièrement destinée aux développeurs, elle s'inscrit d'ailleurs dans la première brique du cloud computing : l'Infrastructure as a Service. Son premier service en bêta publique est \textit{Amazon Elastic Compute Cloud} (EC2) exécutant Microsoft Windows Server et SQL Server puis par la suite d'autres solutions notamment à base de Linux.
  En mars 2006, Amazon lance \textit{Amazon Simple Storage Service} (S3) permettant le stockage de données en ligne puis étend depuis lors ses services.
 	
@@ -493,17 +501,20 @@ Amazon, premièrement une plateforme d'e-commerce, propose depuis juillet 2002 d
 
 	\paragraph*{}
 	Récemment, Amazon a inauguré des centres de données dans la région d'Amérique du Sud (São Paulo) pour sa plateforme de coud computing. Les entreprises basées en Amérique du Sud et les compagnies internationales ayant des clients sur le continent sud-américain peuvent désormais profiter de la suite de services d'infrastructure Web d'AWS pour développer leurs activités et gérer leurs applications dans le nuage.\\
-"De nombreux clients sud-américains ont utilisé les services d'AWS dans les régions déjà établies aux États-Unis, en Europe et en Asie. Grâce au lancement de la nouvelle région d'Amérique du Sud, ces clients peuvent désormais gérer leurs applications au Brésil, ce qui réduit substantiellement la latence pour les utilisateurs finaux en Amérique du Sud, et les entreprises dont les données doivent être stockées en Amérique du Sud disposent maintenant d'une solution simple sur place,” explique Andy Jassy, vice-président directeur d'Amazon Web Services.
-
-%http://www.decideo.fr/Amazon-Web-Services-inaugure-des-centres-de-donnees-au-Bresil-pour-sa-plate-forme-de-nuage-informatique_a4762.html
+"De nombreux clients sud-américains ont utilisé les services d'AWS dans les régions déjà établies aux États-Unis, en Europe et en Asie. Grâce au lancement de la nouvelle région d'Amérique du Sud, ces clients peuvent désormais gérer leurs applications au Brésil, ce qui réduit substantiellement la latence pour les utilisateurs finaux en Amérique du Sud, et les entreprises dont les données doivent être stockées en Amérique du Sud disposent maintenant d'une solution simple sur place,” explique Andy Jassy, vice-président directeur d'Amazon Web Services \cite{source:amazon}.
 
 	\subsection{Google}
-	En 2008, Google a lancé son Cloud public orienté pour les services Web offrant une plate-forme (PaaS) nommée « Google App Engine » et permettant l'hébergement d'applications Python ou Java, ainsi que des applications SaaS regroupées dans la gamme « Google App ».
+	En 2008, Google a lancé son Cloud public orienté pour les services Web offrant une plate-forme (PaaS) nommée « Google App Engine » et permettant l'hébergement d'applications Python ou Java, ainsi que des applications SaaS regroupées dans la gamme « Google Apps ».
 
 	\subsubsection*{Google App Engine}
 	Google Apps Engine est une plateforme de conception et d’hébergement d’applications web basée sur les serveurs de Google. Cette plateforme est facile à construire et à maintenir, elle supporte facilement la montée en charge et les besoins croissants de stockage des données. Google App Engine supporte les applications écrites dans plusieurs langages de programmation. Avec l'environnement d'exécution JavaTM App Engine (JRE), vous pouvez construire votre application en utilisant les technologies standard Java, incluant la JVM, les servlets Java, et le langage de programmation Java, Javascript et Ruby. App Engine comprend également un environnement d'exécution Python dédié, qui inclut un interpréteur Python rapide et une librairie Python standard. Les environnements Java et Python sont construits de telle sorte que les application fonctionnent rapidement, dans un espace sécurisé, et sans interférences avec les autres applications du système. Il n’y a pas de coût de mise en services ni de commission, on paye ce qu’on utilise. Les ressources (stockage, bande passante) sont mesurées et facturées aux clients (Source Google App Engine \cite{source:ggappengine}).
 
 	\subsubsection*{Google Apps}
+		\begin{wrapfigure}{r}{0.5\textwidth}
+			\centering
+			\includegraphics[height=0.47\textwidth]{ggapps.jpeg} 
+			\caption{La suite Google Apps}
+		\end{wrapfigure}
 	Google Apps fournit une suite de Cloud Computing personnalisable comprenant une messagerie (Google Mail), un agenda (Google Calendar), des outils bureautiques (Google Docs) et un chat (Google Talk). Google propose également Google Site qui met à disposition un CMS* à la demande pouvant concevoir des sites Web sans aucun développement.\newline
 Le point fort de Google Apps est sa portabilité. Sur n’importe quel navigateur web ou encore à partir d’application mobile, on peut accéder à nos mails ou nos documents. Google Apps n’est pas destiné uniquement aux startups, de grandes entreprises ont choisis Google comme fournisseur de Cloud Computing. Ces entreprises peuvent ainsi travailler en réseau avec leurs clients.\newline
 Google Apps a également un atout financier. En effet, aucun équipement ou logiciel n’est nécessaire en s’abonnant à ces services. Le coût de cette solution est d’environ 40\euro{} par an et par utilisateur. Pour finir, on n’a pas besoin de mettre à jour les services, Google met à jour régulièrement ses applications en ligne pour corriger d'éventuels problèmes et ajouter de nouvelles fonctionnalités. (Source Google Apps \cite{source:ggapp})
@@ -512,6 +523,11 @@ Google Apps a également un atout financier. En effet, aucun équipement ou logi
 	\subsection{Salesforce.com}
 
 	\paragraph*{}
+		\begin{wrapfigure}{r}{0.5\textwidth}
+			\centering
+			\includegraphics[width=0.5\textwidth]{salesforce.jpg} 
+			\caption{Le logo de Salesforce.com}
+		\end{wrapfigure}
 	Salesforce.com est une entreprise créée en 1999 aux Etats-Unis. Elle distribue des logiciels de gestion basés sur Internet et héberge des applications d'entreprises. Elle est surtout connue au niveau international pour ses solutions en gestion de la relation client (CRM). Basées sur la base de données database.com et une place de marché de logiciels appexchange, les solutions de Salesforce.com sont regroupées en plusieurs grandes catégories : 
 	\subsubsection{Sales Cloud}
 Sales Cloud est une application de force de vente en ligne accessible à travers une connexion Internet par mobile ou ordinateur. Elle permet de consulter à tout moment le profil de clients ou de prospects, de gérer des campagnes marketing et de rassembler toutes les informations essentielles pour optimiser la force de vente d'une entreprise.
@@ -527,7 +543,12 @@ Créé en juin 2010, Chatter est une plate-forme de collaboration en temps-réel
 	
 
 	\subsection{VMware}
-	VMware est une entreprise crée en 1998 à Palo Alto en Californie. Pendant plus de 10 ans, elle a conçu différents produits liés à la virtualisation. En 1999, la permière version de VMware Workstation apparaît. Ce logiciel permet la virtualisation de système d’exploitation. D’autres éditions comme la gamme ESX ou Server proposent des solutions de virtualisation pour les serveurs.
+		\begin{wrapfigure}{r}{0.5\textwidth}
+			\centering
+			\includegraphics[width=0.5\textwidth]{vmware.jpeg} 
+			\caption{Le logo de VMWare}
+		\end{wrapfigure}
+	VMware est une entreprise créée en 1998 à Palo Alto en Californie. Pendant plus de 10 ans, elle a conçu différents produits liés à la virtualisation. En 1999, la première version de VMware Workstation apparaît. Ce logiciel permet la virtualisation de système d’exploitation. D’autres éditions comme la gamme ESX ou Server proposent des solutions de virtualisation pour les serveurs.
 
 	Depuis 2008, VMware n’a cessé d’investir dans le marché du Cloud Computing en rachetant différentes entreprises comme Zimbra (application SaaS de collaboration) ou SpringSource pour son offre PaaS avec vFabric. Aujourd’hui VMware propose une IaaS nommé vSphere et une PaaS nommé vFabric.
 	\subsubsection*{vSphere}
@@ -543,6 +564,13 @@ Créé en juin 2010, Chatter est une plate-forme de collaboration en temps-réel
 
 
 	\subsection{Microsoft}
+
+\subsubsection{Azure}
+		\begin{wrapfigure}{r}{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.3\textwidth]{azure.jpeg} 
+			\caption{Le logo de Windows Azure}
+		\end{wrapfigure}
 Microsoft a annoncé sa plateforme d'hébergement de cloud computing en octobre 2008, baptisée Azure. Elle étend le SaaS déjà proposé par Microsoft : Microsoft Online Services. On accède à la plateforme via la suite Windows Azure, composée de trois composants : \textit{Compute}, \textit{Storage} et \textit{Fabric}.
 
 Commercialisée en février 2010, elle propose les services suivants :
@@ -558,8 +586,18 @@ Commercialisée en février 2010, elle propose les services suivants :
 
 Les data-centers sont présents en Amérique du Nord, en Asie et en Europe.
 
-%TODO Office 365
-	
+\subsubsection{Office 365}
+La solution Office 365 de Microsoft est un SaaS annoncé en automne 2010 et commercialisé en juin 2011. En décembre 2011, Microsoft a lancé le \textit{Trust Center} en indiquant qu'Office 365 se conformait aux directives européennes sur la confidentialité\cite{source:netzwelt}.
+Elle est composée des produits suivants :
+\begin{description}
+\item[Microsoft Exchange Online] : e-mails, calendriers, contacts ; 25Go de stockage par utilisateur ; possibilité de partage
+\item[Microsoft SharePoint Online] : service de partage, collaboration et d'édition de documents en ligne
+\item[Microsoft Lync Online] : messagerie instantanée, appels audio/vidéo, réunions en ligne
+\item[Office Web Apps] : version compatibles pour navigateurs des applications Excel, Word et PowerPoint
+\end{description}
+
+Ces produits sont proposés à la fois pour les industries et pour les petites entreprises, une version éducation est également disponible.
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\chapter{Contexte d’entreprise}
 	%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -640,16 +678,16 @@ Enfin, avant de choisir une solution de Cloud Computing, il est important de se 
 \begin{flushleft}
 	\begin{thebibliography}{9}
 	\bibitem{source:policy}  Article : \textit{US government adopts ‘cloud-first’ policy} \\
-http://www.smartplanet.com/blog/business-brains/us-government-adopts-8216cloud-first-policy/11943 (vu en déc. 2011)
+http://www.smartplanet.com/blog/business-brains/us-government-adopts-8216cloud-first-policy/11943 \\(vu en déc. 2011)
 
 	\bibitem{source:twitter}  Article, Le Figaro : \textit{Un Français arrêté pour avoir piraté Twitter} \\
-http://www.lefigaro.fr/web/2010/03/24/01022-20100324ARTFIG00758-un-francais-arrete-pour-avoir-pirate-twitter-.php (vu en déc. 2011)
+http://www.lefigaro.fr/web/2010/03/24/01022-20100324ARTFIG00758-un-francais-arrete-pour-avoir-pirate-twitter-.php \\(vu en déc. 2011)
 
 	\bibitem{source:valeo} Article : \textit{Valeo roule pour les Google Apps... mais sans soulever le capot}\\
-http://www.lemagit.fr/article/google-bureautique-cloud-computing-projets-cloud/3405/1/valeo-roule-pour-les-google-apps-mais-sans-soulever-capot/ (vu en déc. 2011)
+http://www.lemagit.fr/article/google-bureautique-cloud-computing-projets-cloud/3405/1/valeo-roule-pour-les-google-apps-mais-sans-soulever-capot/ \\ (vu en déc. 2011)
 
 	\bibitem{source:ggappengine} Article : \textit{Introduction à Google App Engine} \\
-http://brocoli.developpez.com/articles/presentation/google-app-engine/ (vu en déc. 2011)
+http://brocoli.developpez.com/articles/presentation/google-app-engine/ \\(vu en déc. 2011)
 
 	\bibitem{source:ggapp} Article : \textit{Cloud Computing Google Apps} \\
 http://cloudcomputing.fr/google-apps.php (vu en déc. 2011)
@@ -662,6 +700,12 @@ http://www.cnil.fr/la-cnil/actualite/article/article/cloud-computing-la-cnil-eng
 
 	\bibitem{source:indexel} Article : \textit{Cloud computing : la sécurité en question} \\
 http://www.indexel.net/actualites/cloud-computing-la-securite-en-question-3448.html (vu en déc. 2011)
+
+	\bibitem{source:netzwelt} Article : \textit{Microsoft: Zertifikate sollen Office 365 sicher machen} \\
+http://www.netzwelt.de/news/90021-microsoft-zertifikate-office-365-sicher.html \\(vu en déc. 2011)
+
+	\bibitem{source:amazon} Communiqué de presse : \textit{AWS inaugure des centres de données au brésil} \\
+http://www.decideo.fr/Amazon-Web-Services-inaugure-des-centres-de-donnees-au-Bresil-pour-sa-plate-forme-de-nuage-informatique\_a4762.html \\(vu en déc. 2011)
 
 	\bibitem{source:patriotact} Article : \textit{USA PATRIOT Act} \\
 http://fr.wikipedia.org/wiki/USA\_PATRIOT\_Act (vu en déc. 2011)
